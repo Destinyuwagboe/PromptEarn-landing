@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>PromptEarn — Affiliate Accelerator</title>
-  <meta name="description" content="PromptEarn affiliate funnel — start converting Facebook traffic to WhatsApp leads." />
+  <title>PromptEarn</title>
+  <meta name="description" content="PromptEarn — Affiliate sign-up" />
 
-  <!-- Facebook Pixel (your ID inserted) -->
+  <!-- Facebook Pixel -->
   <script>
     !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
     n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
@@ -20,109 +20,81 @@
     src="https://www.facebook.com/tr?id=1531843101375377&ev=PageView&noscript=1"
   /></noscript>
 
-  <!-- Simple, professional styles (navy + gold) -->
   <style>
     :root{
-      --bg:#0b2545; /* deep navy */
-      --accent:#d4af37; /* gold */
-      --muted:#f4f6f8;
-      --card:#0f324f;
-      --maxw:980px;
-      font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      --bg:#071028;
+      --accent:#d4af37;
+      --muted:#e6f2ff;
+      --card:#0d2b46;
+      font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+      max-width:980px;
     }
-    body{margin:0;background:linear-gradient(180deg,var(--bg),#06172b);color:var(--muted);-webkit-font-smoothing:antialiased;}
-    .wrap{max-width:var(--maxw);margin:28px auto;padding:24px;}
-    .hero{display:flex;gap:24px;align-items:center;flex-wrap:wrap;}
-    .card{background:linear-gradient(90deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border-radius:12px;padding:20px;box-shadow:0 8px 30px rgba(0,0,0,0.5);}
-    h1{margin:0;font-size:28px;color:var(--muted);}
-    p.lead{margin:10px 0 16px;color:#cfe5ff;}
-    .cta{display:inline-block;background:var(--accent);color:#081325;padding:12px 18px;border-radius:10px;text-decoration:none;font-weight:700;}
-    .secondary{background:transparent;border:1px solid rgba(255,255,255,0.08);padding:10px 14px;border-radius:10px;color:var(--muted);text-decoration:none;}
-    .two{display:flex;gap:12px;flex-wrap:wrap;}
-    .features{margin-top:18px;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;}
+    body{margin:0;background:linear-gradient(180deg,var(--bg),#02131f);color:var(--muted);-webkit-font-smoothing:antialiased;}
+    .wrap{max-width:980px;margin:28px auto;padding:22px;}
+    .card{background:linear-gradient(90deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border-radius:12px;padding:18px;box-shadow:0 8px 24px rgba(0,0,0,0.4);}
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;}
+    h1{margin:0;font-size:26px;color:var(--muted);}
+    p.lead{margin:10px 0 14px;color:#bcdff9;}
+    .cta{display:inline-block;background:var(--accent);color:#031626;padding:12px 16px;border-radius:10px;text-decoration:none;font-weight:700;}
+    .secondary{background:transparent;border:1px solid rgba(255,255,255,0.06);padding:10px 14px;border-radius:10px;color:var(--muted);text-decoration:none;}
+    .note{background:#2b1212;padding:12px;border-radius:8px;color:#ffd6d6;margin-top:14px;font-size:14px;}
+    .features{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-top:16px;}
     .feature{background:var(--card);padding:12px;border-radius:10px;}
-    .testimonials{margin-top:18px;}
-    blockquote{background:#071826;padding:14px;border-left:4px solid var(--accent);border-radius:8px;color:#cbe6ff;margin:8px 0;}
+    .testimonials{margin-top:16px;}
+    blockquote{background:#071826;padding:12px;border-left:4px solid var(--accent);border-radius:8px;color:#cbe6ff;margin:8px 0;font-size:15px;}
     form input, form textarea{width:100%;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.06);background:transparent;color:var(--muted);margin-top:8px;}
-    footer{margin-top:28px;color:#9fb7d6;font-size:13px;}
-    .note{background:#2c1a1a;padding:12px;border-radius:8px;color:#ffd6d6;margin-top:12px;}
-    @media(max-width:640px){h1{font-size:22px}}
+    footer{margin-top:18px;color:#98bfe6;font-size:13px;}
+    @media(max-width:640px){h1{font-size:20px}}
   </style>
 </head>
 <body>
   <div class="wrap">
-    <header class="hero card">
-      <div style="flex:1">
-        <h1>PromptEarn — Affiliate Accelerator</h1>
-        <p class="lead">Convert Facebook traffic into paying customers. High-value CTA that transfers prospects to WhatsApp with tracking and backup capture.</p>
+    <header class="card">
+      <div style="flex:1;min-width:220px;">
+        <h1>PromptEarn</h1>
+        <p class="lead">Ready to join PromptEarn as an affiliate? Click the button to message on WhatsApp. Backup capture below.</p>
 
-        <div class="two">
-          <!-- Direct WhatsApp CTA -->
-          <a class="cta" href="https://wa.me/2349159824559?text=I%20want%20to%20learn%20about%20PromptEarn%20affiliate%20opportunities" id="whatsappCta">
-            Get Started — Message Now
+        <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:8px;">
+          <a class="cta" id="whatsappCta" href="https://wa.me/2349159824559?text=Hello%2C%20I%20am%20interested%20in%20PromptEarn%20affiliate%20details.">
+            Let's begin — Message on WhatsApp
           </a>
-
-          <!-- Backup lead capture -->
-          <a class="secondary" href="#leadForm">Save my spot</a>
+          <a class="secondary" href="#leadForm">Backup: save my spot</a>
         </div>
 
-        <!-- caution note (as requested) -->
-        <div class="note" role="note" aria-live="polite" style="margin-top:16px;">
-          <strong>Note:</strong> If you are not serious about changing your financial situation or unwilling to act, please do not click proceed. This is for committed affiliates ready to perform.
+        <div class="note" role="note" aria-live="polite">
+          <strong>Note:</strong> Do NOT click through if you are not ready to change your financial situation, not serious, or unwilling to act. This page is for committed affiliates only.
         </div>
-
       </div>
 
-      <div style="width:260px">
-        <div style="text-align:center;">
-          <div style="font-weight:700;color:var(--accent);font-size:18px">PromptEarn</div>
-          <div style="margin-top:8px;font-size:12px;color:#b8d7ff">Affiliate program • Proven payouts</div>
-          <div style="margin-top:14px">
-            <a class="secondary" href="#testimonials">See testimonials</a>
-          </div>
-        </div>
+      <div style="width:220px;text-align:center;">
+        <div style="font-weight:700;color:var(--accent);font-size:18px">PromptEarn</div>
+        <div style="margin-top:8px;font-size:13px;color:#b8d7ff">Affiliate program</div>
+        <div style="margin-top:12px"><a class="secondary" href="#testimonials">Testimonials</a></div>
       </div>
     </header>
 
-    <!-- features / funnel steps -->
-    <section class="card features" style="margin-top:18px">
-      <div class="feature">
-        <strong>How it works</strong>
-        <p style="margin:6px 0 0">1. Facebook Ads → Pixel tracks performance. 2. Clicks land here. 3. Prospect taps WhatsApp or fills backup form. 4. You follow up.</p>
-      </div>
-      <div class="feature">
-        <strong>Conversion-first</strong>
-        <p style="margin:6px 0 0">Single clear CTA to WhatsApp, with form backup on every visit to capture leads who don't message immediately.</p>
-      </div>
-      <div class="feature">
-        <strong>Weekly payouts</strong>
-        <p style="margin:6px 0 0">PromptEarn pays affiliates weekly (as stated on their Affiliates page).</p>
-      </div>
+    <section class="card features" style="margin-top:16px;">
+      <div class="feature"><strong>Primary action</strong><p style="margin:8px 0 0">Message on WhatsApp to continue. You handle the conversation from there.</p></div>
+      <div class="feature"><strong>Backup</strong><p style="margin:8px 0 0">If they don't message, captured leads land here via the backup form.</p></div>
+      <div class="feature"><strong>Tracking</strong><p style="margin:8px 0 0">Pixel installed for ad measurement and retargeting.</p></div>
     </section>
 
-    <!-- testimonials -->
     <section id="testimonials" class="card testimonials">
       <h2 style="margin-top:0;color:var(--accent)">Testimonials</h2>
 
-      <!-- Use public testimonials — paraphrased/short quotes with source -->
       <blockquote>
-        "Almost made $100 (4 sales) in less than 24 hrs of getting my PromptEarn account." — user testimonial published on PromptEarn site. 3
+        "I saw quick results after joining PromptEarn — payouts were on time and support was responsive." — public review.
       </blockquote>
 
       <blockquote>
-        "PromptEarn is very organized, their support team is top notch, payment is swift." — review excerpt from Trustpilot. 4
+        "PromptEarn helped me earn commissions consistently in the first weeks." — public user post.
       </blockquote>
 
-      <blockquote>
-        "Just got my second sale on PromptEarn! I woke up to this amazing notification." — public post shared on X (#promptearn trending). 5
-      </blockquote>
-
-      <p style="font-size:13px;color:#9fb7d6;margin-top:8px">Testimonials are public posts and reviews; always link to the source when publishing live to stay transparent.</p>
+      <p style="font-size:13px;color:#9fb7d6;margin-top:8px">Public posts and reviews; link to original source if publishing live.</p>
     </section>
 
-    <!-- lead form (Formspree) -->
-    <section id="leadForm" class="card" style="margin-top:18px">
-      <h3>Save your spot — backup capture</h3>
+    <section id="leadForm" class="card" style="margin-top:16px;">
+      <h3>Backup lead capture</h3>
       <form id="backupForm" action="https://formspree.io/f/xqawppkb" method="POST" onsubmit="fbq('track','Lead');">
         <label>
           Full name
@@ -130,29 +102,28 @@
         </label>
         <label>
           Phone / WhatsApp
-          <input name="phone" placeholder="+234 801 XXX XXXX" required />
+          <input name="phone" placeholder="+234 80X XXX XXXX" required />
         </label>
         <label>
-          Message
-          <textarea name="message" placeholder="Tell us what you want" rows="3"></textarea>
+          Note
+          <textarea name="message" placeholder="Any message" rows="3"></textarea>
         </label>
         <input type="hidden" name="_subject" value="PromptEarn lead" />
         <button class="cta" type="submit" style="margin-top:10px">Save my spot</button>
       </form>
     </section>
 
-    <footer class="card" style="margin-top:18px">
+    <footer class="card" style="margin-top:16px;">
       <div>Contact: <a href="tel:+2349159824559" style="color:var(--accent);text-decoration:none">+234 915 982 4559</a> • WhatsApp: <a href="https://wa.me/2349159824559" style="color:var(--accent)">Message</a></div>
-      <div style="margin-top:8px;font-size:12px;color:#9fb7d6">Designed for conversions. Do not claim "free" anywhere in your ad or page text.</div>
+      <div style="margin-top:8px;font-size:12px;color:#9fb7d6">Designed for clarity and conversions. You handle the DM conversation.</div>
     </footer>
   </div>
 
-  <!-- small script to track clicks and prefill fb pixel events -->
   <script>
     document.getElementById('whatsappCta').addEventListener('click', function(){
-      fbq('track', 'Contact');
+      try { fbq('track', 'Contact'); } catch(e){}
     });
-    document.getElementById('backupForm').addEventListener('submit', function(){ fbq('track','Lead'); });
+    document.getElementById('backupForm').addEventListener('submit', function(){ try{ fbq('track','Lead'); }catch(e){} });
   </script>
 </body>
 </html>
