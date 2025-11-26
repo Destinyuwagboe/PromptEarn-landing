@@ -1,147 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Promptearn - Simple Step-by-Step Training Guide</title>
-<style>
-  body {font-family: Arial, sans-serif; margin: 0; background: #f9fafb; color: #222;}
-  header {background: #1a73e8; color: white; padding: 2rem; text-align: center;}
-  h1 {margin: 0; font-size: 2.5rem;}
-  h2 {font-weight: normal; margin-top: 0.5rem;}
-  .container {max-width: 800px; margin: 2rem auto; padding: 0 1rem;}
-  .note {background: #ffe6e6; border-left: 5px solid #e63946; padding: 1rem; margin-bottom: 2rem; font-size: 1.1rem;}
-  form {background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);}
-  label {display: block; margin-bottom: 0.5rem; font-weight: bold;}
-  input[type="text"], input[type="email"], input[type="tel"] {
-    width: 100%; padding: 0.75rem; margin-bottom: 1.5rem; border: 1px solid #ccc; border-radius: 4px;
-  }
-  button {
-    background: #e63946; color: white; border: none; padding: 1rem 2rem; font-size: 1.2rem;
-    border-radius: 4px; cursor: pointer; transition: background 0.3s ease;
-  }
-  button:hover {background: #a62832;}
-  .testimonials {
-    margin-top: 3rem;
-    background: white;
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-  }
-  .testimonial {
-    margin-bottom: 1.5rem;
-    font-style: italic;
-    font-size: 1.1rem;
-    color: #555;
-  }
-  footer {
-    text-align: center;
-    padding: 1rem;
-    font-size: 0.9rem;
-    color: #777;
-    margin-top: 3rem;
-  }
-  .logo {
-    max-width: 150px;
-    display: block;
-    margin: 1rem auto 2rem auto;
-  }
-</style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Get Your Guide</title>
 
-<!-- Facebook Pixel Code -->
-<script>
-  !function(f,b,e,v,n,t,s)
-  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-  if(!f._fbq)f._fbq=n; n.push=n; n.loaded=!0; n.version='2.0';
-  n.queue=[]; t=b.createElement(e); t.async=!0;
-  t.src=v; s=b.getElementsByTagName(e)[0];
-  s.parentNode.insertBefore(t,s)}(window, document,'script',
-  'https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', '1531843101375377');
-  fbq('track', 'PageView');
-</script>
-<noscript>
-  <img height="1" width="1" style="display:none" alt="fbpixel"
-       src="https://www.facebook.com/tr?id=1531843101375377&ev=PageView&noscript=1"/>
-</noscript>
-<!-- End Facebook Pixel Code -->
+    <!-- Meta Pixel Code -->
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '1531843101375377');
+      fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=1531843101375377&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
 
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #f9f9f9;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            max-width: 420px;
+            margin: 60px auto;
+            background: #fff;
+            padding: 35px;
+            border-radius: 14px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.06);
+            text-align: center;
+        }
+        h2 {
+            font-size: 26px;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+        .warning {
+            background: #fff5e0;
+            padding: 12px;
+            border-radius: 8px;
+            font-size: 14px;
+            color: #a05a00;
+            margin-bottom: 20px;
+            border-left: 4px solid #ffb14a;
+            text-align: left;
+        }
+        input {
+            width: 100%;
+            padding: 14px;
+            margin: 10px 0;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            font-size: 15px;
+        }
+        button {
+            width: 100%;
+            padding: 15px;
+            background: #22c55e;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            font-size: 17px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: 0.2s;
+        }
+        button:hover {
+            background: #1aaa4e;
+        }
+    </style>
 </head>
 <body>
 
-<header>
-  <img src="https://promptearn.com/wp-content/uploads/2023/03/promptearn-logo.png" alt="Promptearn Logo" class="logo" />
-  <h1>Unlock Your Success with Simple Step-by-Step Affiliate Marketing Training</h1>
-  <h2>Ready to transform your financial future? Start today with easy-to-follow guidance.</h2>
-</header>
+    <div class="container">
+        <h2>Get Your Guide</h2>
 
-<div class="container">
-  <div class="note">
-    <strong>Note:</strong> If you're not serious about changing your financial situation or making an impact, please do not proceed.
-  </div>
+        <div class="warning">
+            <strong>Warning:</strong><br>
+            If improving your financial situation isn't something you’re truly ready for, this is not for you. Only continue if you’re serious about making changes.
+        </div>
 
-  <form id="leadForm" action="https://formspree.io/f/xqawppkb" method="POST">
-    <label for="name">Full Name</label>
-    <input type="text" id="name" name="name" required />
-    
-    <label for="email">Email Address</label>
-    <input type="email" id="email" name="_replyto" required />
-    
-    <label for="phone">Phone Number</label>
-    <input type="tel" id="phone" name="phone" required />
-    
-    <button type="submit">Get Started</button>
-  </form>
+        <form action="https://formspree.io/f/xqawppkb" method="POST" onsubmit="redirectToWhatsApp()">
+            <input type="text" name="name" placeholder="Your Name" id="name" required />
+            <input type="email" name="email" placeholder="Your Email" id="email" required />
+            <button type="submit">Get Started</button>
+        </form>
 
-  <section class="testimonials" aria-label="Testimonials">
-    <h2>What Our Members Say About Promptearn</h2>
-    <p class="testimonial">"Promptearn changed my business overnight. The training is simple and actionable." — Digital Marketer</p>
-    <p class="testimonial">"I've earned commissions quickly using Promptearn. Reliable payments and great support!" — Affiliate Student</p>
-    <p class="testimonial">"This is the easiest affiliate platform I’ve worked with — highly recommended!" — Online Coach</p>
-  </section>
-</div>
+    </div>
 
-<footer>
-  &copy; 2025 Promptearn | Privacy Policy | Contact Us
-</footer>
-
-<script>
-  // Form submission handler for WhatsApp redirection
-  document.getElementById('leadForm').addEventListener('submit', function(e) {
-    e.preventDefault();
-    
-    // Collect form data
-    var name = document.getElementById('name').value.trim();
-    var email = document.getElementById('email').value.trim();
-    var phone = document.getElementById('phone').value.trim();
-
-    // Send form data to Formspree
-    var form = e.target;
-
-    fetch(form.action, {
-      method: form.method,
-      headers: {
-        'Accept': 'application/json'
-      },
-      body: new FormData(form)
-    }).then(function(response) {
-      if (response.ok) {
-        // Track Facebook Lead event
-        fbq('track', 'Lead');
-
-        // Redirect to WhatsApp with automated message
-        var whatsappMessage = encodeURIComponent("I am ready for a change");
-        var whatsappURL = "https://wa.me/2349159824559?text=" + whatsappMessage;
-        window.location.href = whatsappURL;
-      } else {
-        alert('Oops! There was a problem submitting your form.');
-      }
-    }).catch(function(error) {
-      alert('Oops! There was a problem submitting your form.');
-    });
-  });
-</script>
+    <script>
+        function redirectToWhatsApp() {
+            let name = document.getElementById('name').value;
+            let url = `https://wa.me/19159824559?text=I'm%20ready%20for%20a%20change.%20My%20name%20is%20${encodeURIComponent(name)}`;
+            window.location.href = url;
+        }
+    </script>
 
 </body>
 </html>
